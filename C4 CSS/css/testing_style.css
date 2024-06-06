@@ -7,6 +7,9 @@ body {
   border: 1px solid red;
   width:60vw;
   margin: auto;
+  padding: 0px 1em;
+  border-radius: 1em;
+  
 }
 
 .miTitulo {
@@ -20,4 +23,14 @@ body {
 
 #imagenGato {
   width: 240px;
+}
+
+
+.tarjeta {
+  border: 1px solid blue;
+  width: fit-content;
+}
+
+.tarjeta:hover {
+  background-color: aquamarine;
 }
