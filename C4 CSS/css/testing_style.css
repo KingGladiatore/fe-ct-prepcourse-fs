@@ -1,0 +1,23 @@
+body {
+  background-color: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#headerTitulos{
+  border: 1px solid red;
+  width:60vw;
+  margin: auto;
+}
+
+.miTitulo {
+  font-size: 2em;
+}
+
+.miTexto {
+  color: rgb(71, 69, 69);
+  font-size: 1em;
+}
+
+#imagenGato {
+  width: 240px;
+}
