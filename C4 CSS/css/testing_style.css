@@ -29,6 +29,7 @@ body {
 .tarjeta {
   border: 1px solid blue;
   width: fit-content;
+  transition:ease 2s
 }
 
 .tarjeta:hover {
