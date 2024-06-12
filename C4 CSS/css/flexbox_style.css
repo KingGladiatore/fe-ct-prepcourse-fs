@@ -1,0 +1,24 @@
+.cards_container {
+  background-color: aquamarine;
+  width: 85vw;
+  margin: auto;
+  border: 2px solid red;
+  border-radius: 15px;
+  /* padding: 2em; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 1em;
+  align-items:center;
+}
+
+.card_testing {
+  border: 1px solid blue;
+  width: 33vw;
+  height: 35vh;
+  
+}
+
+.card {
+  width: fit-content;  
+}
