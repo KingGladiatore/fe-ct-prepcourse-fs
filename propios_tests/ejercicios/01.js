@@ -6,4 +6,9 @@ const objeto = { nombre: "kevin" };
 //Testing
 
 
-if (objeto) console.log('Si se imprimira');
+// if (objeto) console.log('Si se imprimira');
+
+
+var numero = 123/100;
+
+console.log(numero);
