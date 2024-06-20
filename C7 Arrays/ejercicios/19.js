@@ -4,14 +4,16 @@ function multiplicarArgumentos() {
   // [PISTA]: "arguments" es un arreglo.
   // Tu código:
   if (arguments.length === 0) return 0;
+  if (arguments.length === 1) return arguments[0];
+  else {
+    let multiplicacion = 1;
 
-  let multiplicacion = arguments[0];
+    for (let i = 0; i < arguments.length; i++) {
+      multiplicacion *= arguments[i];
+    }
 
-  for (let i = 1; i < arguments.length; i++) {
-    multiplicacion *= arguments[i];
+    return multiplicacion;
   }
-
-  return multiplicacion;
 }
 
 module.exports = multiplicarArgumentos;
