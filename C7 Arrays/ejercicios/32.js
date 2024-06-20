@@ -5,10 +5,10 @@ function esPalindromo(string) {
   // IMPORTANTE: Un palíndromo es una palabra o frase
   // que se lee igual hacia adelante que hacia atrás.
   // Tu código:
-  let array = string.split("");
+
   let invertir_array = [];
-  for (let i = array.length - 1; i >= 0; i--) {
-    invertir_array.push(array[i]);
+  for (let i = string.length - 1; i >= 0; i--) {
+    invertir_array.push(string[i]);
   }
 
   let unir_array = invertir_array.join("");

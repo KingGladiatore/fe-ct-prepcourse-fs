@@ -1,18 +1,7 @@
-let suma = 0;
 
-// for (let index = 0; index < 5; index++) {
-//   suma = suma + index;
-//   console.log(suma);
-// }
+let fecha = '2020-05-10';
 
-while (suma < 3) {
-  if (suma === 1) break;
+let fecha_convertida = new Date (fecha);
 
-  suma = suma + 1;
-  console.log(suma);
-}
+console.log(fecha_convertida.toISOString());
 
-// do {
-//   suma = suma + 1;
-//   console.log(suma);
-// } while (suma < 3);

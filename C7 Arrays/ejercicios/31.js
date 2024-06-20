@@ -3,10 +3,9 @@ function invertirTexto(texto) {
   // Tu objetivo es invertir el string y devolver el string invertido.
   // Tu código:
   
-  let separar_array = texto.split("");
   let array_invertido = [];
-  for (let i = separar_array.length - 1; i >= 0; i--) {
-    array_invertido.push(separar_array[i]);
+  for (let i = texto.length - 1; i >= 0; i--) {
+    array_invertido.push(texto[i]);
   }
 
   let unir_array_invertido = array_invertido.join("");
