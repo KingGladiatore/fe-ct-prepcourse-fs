@@ -46,6 +46,20 @@ function capToFront(string) {
   // Retornar el string.
   // [EJEMPLO]: soyHENRY ---> HENRYsoy
   // Tu código:
+
+  let array_minuscula = [];
+  let array_mayuscula = [];
+  let string_final = "";
+
+  string.split("").forEach((letra) => {
+    if (letra == letra.toLocaleUpperCase()) array_mayuscula.push(letra);
+  });
+  string.split("").forEach((letra) => {
+    if (letra == letra.toLocaleLowerCase()) array_minuscula.push(letra);
+  });
+  string_final = array_mayuscula.join("") + array_minuscula.join("");
+
+  return string_final;
 }
 
 function asAmirror(frase) {
@@ -53,18 +67,36 @@ function asAmirror(frase) {
   // La diferencia es que cada palabra estará escrita al inverso.
   // [EJEMPLO]: "The Henry Challenge is close!"  ---> "ehT yrneH egnellahC si !esolc"
   // Tu código:
+  let frase_invertida = "";
+  let array_frase = frase.split(" ");
+
+  array_frase.forEach((palabra, index) => {
+    if (array_frase.length - 1 !== index) frase_invertida += palabra.split("").toReversed().join("") + " ";
+    else frase_invertida += palabra.split("").toReversed().join("");
+  });
+
+  return frase_invertida;
 }
 
 function capicua(numero) {
   // Si el número que recibes es capicúa debes retornar el string: "Es capicua".
   // Caso contrario: "No es capicua".
   // Tu código:
+  if (numero == numero.toString().split("").toReversed().join("")) return "Es capicua";
+  else return "No es capicua";
 }
 
 function deleteAbc(string) {
   // Tu tarea es eliminar las letras "a", "b" y "c" del string recibido.
   // Retorna el string sin estas letras.
   // Tu código:
+  let nuevo_String = [];
+
+  string.split("").forEach((letra) => {
+    if (letra !== "a" && letra !== "b" && letra !== "c") nuevo_String.push(letra);
+  });
+
+  return nuevo_String.join("");
 }
 
 function sortArray(arrayOfStrings) {
@@ -73,6 +105,8 @@ function sortArray(arrayOfStrings) {
   // de la longitud de cada string.
   // [EJEMPLO]: ["You", "are", "beautiful", "looking"]  ---> [“You", "are", "looking", "beautiful"]
   // Tu código:
+
+  return arrayOfStrings.sort((a, b) => a.length - b.length);
 }
 
 function buscoInterseccion(array1, array2) {
@@ -82,6 +116,12 @@ function buscoInterseccion(array1, array2) {
   // Si no tienen elementos en común, retornar un arreglo vacío.
   // [PISTA]: los arreglos no necesariamente tienen la misma longitud.
   // Tu código:
+  let nuevo_array = [];
+  array1.forEach((elemento) => {
+    if (array2.includes(elemento)) nuevo_array.push(elemento);
+  });
+
+  return nuevo_array;
 }
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
